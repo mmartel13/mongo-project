@@ -13,7 +13,7 @@ const getUserCollection = () => {
     const col = db.collection('users');
     return col;
 }
-
+//update
 const insertUser = async () => {
     const col = getUserCollection();
     await col.insertOne({
@@ -42,7 +42,6 @@ const insertProduct = async () => {
         type: 'pants',
         color: 'blue',
         size: 'small',
-
     });
     console.log('Product Inserted!');
 };
